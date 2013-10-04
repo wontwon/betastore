@@ -1,0 +1,23 @@
+<img src="http://whatweekly.com/wp-content/uploads/2012/08/betamorelogo.jpg"/>
+
+
+<h1 style="text-align:center">Log In</h1>
+
+<form method="POST" action="/log_in" style="text-align:center">
+	<label>
+		Email
+	<input type="email" name="email" />
+	</label>
+
+	<label>
+		Password
+	<input type="password" name="password" />
+	</label>
+
+	<button type="submit">Log In</button>
+</form>
+
+<% if flash[:alert] %>
+	<p style="color:red"><%= flash[:alert] %></p>
+
+<% end %>
