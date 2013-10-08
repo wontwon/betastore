@@ -1,23 +1,31 @@
-<img src="http://whatweekly.com/wp-content/uploads/2012/08/betamorelogo.jpg"/>
+<div class="container">
+
+	<div class="banner"><img src="http://whatweekly.com/wp-content/uploads/2012/08/betamorelogo.jpg"/></div>
 
 
-<h1 style="text-align:center">Log In</h1>
+	<h1>Log In</h1>
 
-<form method="POST" action="/log_in" style="text-align:center">
-	<label>
-		Email
-	<input type="email" name="email" />
-	</label>
+	<form method="POST" action="/log_in" style="text-align:center">
+		<label>
+			Email
+			<input type="email" name="email" />
+		</label>
 
-	<label>
-		Password
-	<input type="password" name="password" />
-	</label>
+		<label>
+			Password
+			<input type="password" name="password" />
+		</label>
 
-	<button type="submit">Log In</button>
-</form>
+		<button type="submit">Log In</button>
+	</form>
 
-<% if flash[:alert] %>
+
+
+	<% if flash[:alert]%>
 	<p style="color:red"><%= flash[:alert] %></p>
+	<% end %>
 
-<% end %>
+
+
+
+</div>
