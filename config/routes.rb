@@ -1,6 +1,7 @@
 Betastore::Application.routes.draw do
-  resources :products
+  resources :products, :subscriptions
   root :to => 'products#index'
+
 
   get '/log_in' => 'log_ins#new', as: 'log_in'
   post '/log_in' => 'log_ins#create'
