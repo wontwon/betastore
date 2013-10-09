@@ -3,14 +3,12 @@
 
 	<% @products.each do |product| %>
 
-	<!-- All Each Row just shows up now! -->
 	<div class="box">
 		<img class="box-image" src="<%= product.url %>"/>
-		<!--  -->
-				<%= display_name_id(product) %>
-<!-- 		<div class="box-text"><%= display_name_id(product.name, product.id) %></div> -->
-		<div class="box-text"><%= link_to "Edit", edit_product_path(product)%></div>
-		<div class="box-text"><%= link_to "Delete", product, :method => :delete%></div>
+		
+		<%= display_name_id(product) %>
+		<%= display_edit_link(product) %>
+		<%= display_delete_link(product) %>
 
 	</div>
 
@@ -24,9 +22,9 @@
 
 
 	<% if cookies[:email].present? %>
-		<%= link_to "Log Out", log_out_path, method: 'post' %>
+	<%= link_to "Log Out", log_out_path, method: 'post' %>
 	<%else%>
-		<%= link_to "Log In", log_in_path, method: 'get' %>
+	<%= link_to "Log In", log_in_path, method: 'get' %>
 	<%end%>
 
 </div> 
