@@ -2,26 +2,13 @@
 
 	<h1>Log In</h1>
 
-	<form method="POST" action="/log_in" style="text-align:center">
-		<label>
-			Email
-			<input type="email" name="email" />
-		</label>
-
-		<label>
-			Password
-			<input type="password" name="password" />
-		</label>
-
-		<button type="submit">Log In</button>
-	</form>
-
-
+	<%= render 'form' %>
 
 	<% if flash[:alert]%>
 	<p style="color:red"><%= flash[:alert] %></p>
 	<% end %>
 
+	<%= link_to 'Don\'t have an account yet?', sign_up_path %>
 
 
 
