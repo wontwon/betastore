@@ -1,0 +1,22 @@
+<%= form_for @customer, url: sign_up_path do |f| %>
+
+<div> 
+	<%= f.label :name %>
+	<%= f.text_field :name %>
+</div>
+
+
+<div> 
+	<%= f.label :email %>
+	<%= f.text_field :email %>
+</div>
+
+
+<div> 
+	<%= f.label :password %>
+	<%= f.text_field :password %>
+</div>
+
+<%= f.submit 'Sign Up' %>
+
+<% end %>
