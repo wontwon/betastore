@@ -6,7 +6,9 @@
 	<!-- All Each Row just shows up now! -->
 	<div class="box">
 		<img class="box-image" src="<%= product.url %>"/>
-		<div class="box-text"><%= display_name_id(product.name, product.id) %></div>
+		<!--  -->
+				<%= display_name_id(product) %>
+<!-- 		<div class="box-text"><%= display_name_id(product.name, product.id) %></div> -->
 		<div class="box-text"><%= link_to "Edit", edit_product_path(product)%></div>
 		<div class="box-text"><%= link_to "Delete", product, :method => :delete%></div>
 
