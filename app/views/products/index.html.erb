@@ -5,20 +5,13 @@
 
 	<div class="box">
 		<img class="box-image" src="<%= product.url %>"/>
-		
 		<%= display_name_id(product) %>
 		<%= display_edit_link(product) %>
 		<%= display_delete_link(product) %>
 
 	</div>
 
-
-
 	<%end%>
-
-
-
-
 
 
 	<% if cookies[:email].present? %>
@@ -28,7 +21,6 @@
 	<%end%>
 
 </div> 
-
 
 
 
