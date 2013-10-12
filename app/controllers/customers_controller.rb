@@ -7,10 +7,12 @@ class CustomersController < ApplicationController
 
 	def create
 		@customer = Customer.new(customer_params)
-		if @customer.save
+		@customer.save
+		if customer.valid?
 			redirect_to products_path, notice: "You are being redirected"
 		else
-			render 'new'
+			@errors = customer.errors.full_messages
+			render 'new' 
 		end
 	end
 
