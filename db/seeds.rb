@@ -14,3 +14,8 @@ Journal = Product.create(name: 'Journal', price: 3.99, url: 'http://pjb3.github.
 Sticker = Product.create(name: 'Sticker', price: 3.99, url: 'http://pjb3.github.io/betastore/products/sticker.jpg')
 Hat = Product.create(name: 'Hat', price: 3.99, url: 'http://pjb3.github.io/betastore/products/hat.jpg')
 
+
+Tuan = Customer.create(name: 'Tuan', email: 'tuan@tuan.com', password:'secret')
+Tuan = Customer.create(name: 'Stephen', email: 'Stephen@stephen.com', password:'secret')
+Tuan = Customer.create(name: 'Tony', email: 'Tony@tony.com', password:'tony')
+Tuan = Customer.create(name: 'Rob', email: 'Rob@rob.com', password:'secret')
