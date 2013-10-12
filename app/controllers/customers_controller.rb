@@ -8,7 +8,7 @@ class CustomersController < ApplicationController
 	def create
 		@customer = Customer.new(customer_params)
 		if @customer.save
-			redirect_to products_path, notice: "You are being redirecteda"
+			redirect_to products_path, notice: "You are being redirected"
 		else
 			render 'new'
 		end
@@ -16,6 +16,6 @@ class CustomersController < ApplicationController
 
 	private
 	def customer_params
-		params.require(:customer).permit(:name, :email, :password)
+		params.require(:customer).permit(:name, :email)
 	end
 end
