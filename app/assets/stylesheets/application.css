@@ -12,4 +12,19 @@
  //= require_tree .
  
 
- 
+ /*careful here why are you using an ID and a Class to name container?*/
+ /*classes are used when something will repeat itself*/
+ /*ids are used when there is generally a single instance of the selector*/
+.container{
+
+  height: auto;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#container {
+  height: 400px;
+  width: 500px;
+  margin: 0 auto;
+}
