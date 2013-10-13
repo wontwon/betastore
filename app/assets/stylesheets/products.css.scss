@@ -1,16 +1,30 @@
 .box {
-	height: 300px;
-	width: 200px;
+	height:50%;
+	width: 30.33333333%;
+	min-width: 200px;
+	min-height: 250px;
+	max-height: 300px;
 	float: left;
 	text-align: center;
 	font-size: 12px;
 	font-family: 'Rationale', sans-serif;
-	border-style: solid;
+	border: 1px solid black;
+	margin: 5px;
+	&:hover{
+		// for hovering over a box
+		opacity:0.8;
+		background-color: yellow;
+	}
+	a{
+		font-size: 14px;
+		text-decoration: none;
+		color:#4FBBBF;
+	}
 }
 
 .box-image {
-	height: 200px;
-	width: 200px;
+	height: 70%;
+	width: 90%;
 }
 
 .box-text{
