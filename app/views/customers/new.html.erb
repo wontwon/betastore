@@ -1,9 +1,13 @@
 <div class = "container">
+  <ul>
+    <% @errors.each do |error|%>
+    <li><%= error %></li>
+    <% end %>
+  </ul>
+  <h1> Create a New Account </h1>
 
-<h1> Create a New Account </h1>
+  <%= render 'form' %>
 
-<%= render 'form' %>
-
-	<%= link_to 'Already have an account? Log In', log_in_path %>
+  <%= link_to 'Already have an account? Log In', log_in_path %>
 
 </div>
