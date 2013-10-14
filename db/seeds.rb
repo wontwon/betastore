@@ -15,13 +15,13 @@
 
 ARRAY_OF_IMGS = ['http://pjb3.github.io/betastore/products/shirt.jpg', 'http://pjb3.github.io/betastore/products/iphone_case.jpg', 'http://pjb3.github.io/betastore/products/hoodie.jpg', 'http://pjb3.github.io/betastore/products/journal.jpg', 'http://pjb3.github.io/betastore/products/sticker.jpg', 'http://pjb3.github.io/betastore/products/hat.jpg']
 
-400.times do |x|
+10.times do |x|
 Product.create(name: Faker::Commerce.product_name, price: rand(0.99...9999.0).round(2), url: ARRAY_OF_IMGS.sample)
 p "product created"
 end
   
 
-200.times do |x|
-Customer.create(name: Faker::Name.name, email: Faker::Internet.email, password:'secret')
+10.times do |x|
+Customer.create(name: Faker::Name.name, email: Faker::Internet.email, password:'secret', password_confirmation: 'secret')
 p "customer created"
 end
