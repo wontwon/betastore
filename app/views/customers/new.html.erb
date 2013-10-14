@@ -1,13 +1,18 @@
 <div class = "container">
   <ul>
+  <!-- if errors is not nil then do below  -->
+
+  <% if @errors %>
     <% @errors.each do |error|%>
     <li><%= error %></li>
     <% end %>
-  </ul>
-  <h1> Create a New Account </h1>
+  <% end %>
 
-  <%= render 'form' %>
+</ul>
+<h1> Create a New Account </h1>
 
-  <%= link_to 'Already have an account? Log In', log_in_path %>
+<%= render 'form' %>
+
+<%= link_to 'Already have an account? Log In', log_in_path %>
 
 </div>
