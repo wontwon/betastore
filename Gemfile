@@ -41,6 +41,8 @@ gem 'rails_12factor'
 
 gem 'bcrypt-ruby', '~> 3.0.1'
 
+gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
