@@ -1,4 +1,5 @@
 class Order < ActiveRecord::Base
   belongs_to :customer
-  #validations?
+  
+  validates_presence_of :customer, :id
 end
