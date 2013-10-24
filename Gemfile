@@ -35,6 +35,8 @@ end
 
 group :development do
 	gem 'hirb'
+  gem 'quiet_assets'
+  gem 'pry'
 end
 
 gem 'rails_12factor'
@@ -42,6 +44,10 @@ gem 'rails_12factor'
 gem 'bcrypt-ruby', '~> 3.0.1'
 
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+
+
+#To use the API
+gem 'httparty'
 
 # Use unicorn as the app server
 # gem 'unicorn'
