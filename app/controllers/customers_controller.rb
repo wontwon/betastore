@@ -8,16 +8,16 @@ class CustomersController < ApplicationController
 	def create
 		@customer = Customer.new(customer_params)
 		@customer.save
-		if customer.valid?
+		if @customer.valid?
 			redirect_to products_path, notice: "You are being redirected"
 		else
-			@errors = customer.errors.full_messages
+			@errors = @customer.errors.full_messages
 			render 'new' 
 		end
 	end
 
 	private
 	def customer_params
-		params.require(:customer).permit(:name, :email)
+		params.require(:customer).permit(:name, :email, :password, :password_confirmation)
 	end
 end
