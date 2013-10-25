@@ -1,0 +1,13 @@
+<% item = @admin_product %>
+
+<h1>Editing <%= item.name %></h1>
+
+<img src="<%= item.url %>" />
+<p><%= number_to_currency(item.price) %></p>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @admin_product %> |
+<%= link_to 'Back', admin_products_path %>
+
+
